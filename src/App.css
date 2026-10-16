@@ -1,0 +1,4 @@
+.playing-card { transform-style: preserve-3d; transition: transform .65s cubic-bezier(.2,.7,.2,1); }
+.playing-card.flipped { transform: rotateY(180deg); }
+.card-face { backface-visibility: hidden; }
+.card-back { transform: rotateY(180deg); }

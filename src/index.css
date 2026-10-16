@@ -1,0 +1,43 @@
+﻿@import "tailwindcss";
+
+@theme inline {
+  --font-sans: 'DM Sans', Arial, sans-serif;
+  --font-mono: 'DM Mono', monospace;
+  --font-serif: 'Playfair Display', Georgia, serif;
+}
+
+/* Color palette */
+:root {
+  --bg: #f8f9f4;
+  --bg-subtle: #e5e9df;
+  --bg-card: #ffffff;
+  --fg: #19372d;
+  --muted: #738077;
+  --accent: #71983d;
+  --accent-light: #c7fa73;
+  --border: #d8ddd4;
+  --border-card: #e4e3d9;
+  --quote-text: #344b3d;
+  --source: #31543b;
+}
+
+/* Global */
+* { box-sizing: border-box; }
+body {
+  font-family: var(--font-sans);
+  color: var(--fg);
+  background: var(--bg);
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  line-height: 1.6;
+}
+
+/* Buttons */
+button, a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+button {
+  cursor: pointer;
+}
